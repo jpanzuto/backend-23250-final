@@ -1,8 +1,22 @@
 import { crearPersona } from "../models/personaModel.js";
 import daoPersonas from "../databases/personas/daoPersonas.js";
 
-export async function registrarPersona(username, password) {
-  const persona = await crearPersona(username, password);
+export async function registrarPersona(
+  username,
+  password,
+  firstname,
+  lastname,
+  phone,
+  imageprofile
+) {
+  const persona = await crearPersona(
+    username,
+    password,
+    firstname,
+    lastname,
+    phone,
+    imageprofile
+  );
   await daoPersonas.guardar(persona);
   return persona;
 }

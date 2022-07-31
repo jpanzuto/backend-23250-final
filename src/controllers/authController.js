@@ -8,12 +8,16 @@ export async function postSignup(req, res) {
   try {
     const user = await registrarPersona(
       req.body.username,
-      bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8), null)
+      bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8), null),
+      req.body.firstname,
+      req.body.lastname,
+      req.body.phone,
+      req.body.imageprofile
     );
     const access_token = generateAuthToken(req.body.username);
     res.json({ access_token });
   } catch (error) {
-    logger.warn("error en SignUp");
+    logger.warn("error en SignUp" + error);
     res.status(401).json({
       error: "error de registracion",
       detalle: "error de registracion",
