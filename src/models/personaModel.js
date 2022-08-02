@@ -23,7 +23,7 @@ export async function crearPersona(
   if (!firstname) throw new Error("falta el campo firstname");
   if (!lastname) throw new Error("falta el campo lastname");
   if (!phone) throw new Error("falta el campo phone");
-  if (!imageprofile) imageprofile = "S/D";
+  if (!imageprofile) throw new Error("falta el campo imageprofile");
 
   return {
     id: crearId(),
@@ -32,6 +32,6 @@ export async function crearPersona(
     username: username.toLowerCase(),
     password: password,
     phone: phone,
-    imageprofile: imageprofile, // (guardada con multer, servida con express.static)
+    imageprofile: imageprofile,
   };
 }

@@ -131,3 +131,21 @@
 [2022-08-02T15:34:40.367] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'toLowerCase')
 [2022-08-02T15:36:36.696] [WARN] default - error en SignUpError: Error en el usuario
 [2022-08-02T15:39:16.687] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:11:24.092] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:24:16.824] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:28:22.551] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:29:18.461] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:33:31.614] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:34:22.202] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:38:29.875] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:39:12.079] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:39:34.337] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'filename')
+[2022-08-02T16:40:10.031] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'filename')
+[2022-08-02T16:44:08.955] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'filename')
+[2022-08-02T16:51:06.991] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'filename')
+[2022-08-02T16:51:53.129] [WARN] default - error en SignUpReferenceError: imageprofile is not defined
+[2022-08-02T16:52:39.907] [WARN] default - error en SignUpReferenceError: imageprofile is not defined
+[2022-08-02T16:54:30.566] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:54:37.675] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T16:54:45.930] [WARN] default - error en SignUpError: falta el campo imageprofile
+[2022-08-02T16:56:13.325] [WARN] default - error en SignUpError: falta el campo imageprofile

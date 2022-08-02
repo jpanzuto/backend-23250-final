@@ -5,15 +5,17 @@ import { autenticar } from "../services/personasService.js";
 import logger from "../logger.js";
 
 export async function postSignup(req, res) {
+  var imageprofile = "";
+  if (req.file) imageprofile = req.file.filename;
+
   try {
-    console.log(req.body);
     const user = await registrarPersona(
       req.body.username,
       bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8), null),
       req.body.firstname,
       req.body.lastname,
       req.body.phone,
-      req.body.imageprofile
+      imageprofile
     );
     const access_token = generateAuthToken(req.body.username);
     res.json({ access_token });
