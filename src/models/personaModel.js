@@ -29,7 +29,7 @@ export async function crearPersona(
     id: crearId(),
     firstname: firstname.toLowerCase(),
     lastname: lastname.toLowerCase(),
-    username: username.toLowerCase(), //pasar a email
+    username: username.toLowerCase(),
     password: password,
     phone: phone,
     imageprofile: imageprofile, // (guardada con multer, servida con express.static)

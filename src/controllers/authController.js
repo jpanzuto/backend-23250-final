@@ -6,6 +6,7 @@ import logger from "../logger.js";
 
 export async function postSignup(req, res) {
   try {
+    console.log(req.body);
     const user = await registrarPersona(
       req.body.username,
       bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8), null),

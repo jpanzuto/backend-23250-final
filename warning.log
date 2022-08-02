@@ -110,3 +110,24 @@
 [2022-07-31T10:10:33.707] [WARN] default - error en SignUp
 [2022-07-31T10:12:23.347] [WARN] default - error en SignUpError: Error en el usuario
 [2022-07-31T10:15:03.846] [WARN] default - error en SignUpError: Error en el Username
+[2022-07-31T10:23:45.803] [WARN] default - Route GET /api/login no existe
+[2022-08-01T16:45:51.653] [WARN] default - Route GET /favicon.ico no existe
+[2022-08-01T16:46:29.112] [WARN] default - error en SignUpReferenceError: datos is not defined
+[2022-08-01T16:48:40.554] [WARN] default - error en SignUpReferenceError: datos is not defined
+[2022-08-01T16:52:39.955] [WARN] default - error en SignUpReferenceError: datos is not defined
+[2022-08-01T16:54:03.953] [WARN] default - error en SignUpReferenceError: datos is not defined
+[2022-08-01T17:11:04.652] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-01T17:11:36.236] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-01T17:17:46.338] [WARN] default - error en SignUpReferenceError: imageprofile is not defined
+[2022-08-01T17:18:17.616] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-01T17:31:57.219] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-01T18:00:05.032] [WARN] default - Route GET /api/login no existe
+[2022-08-01T18:00:05.148] [WARN] default - Route GET /favicon.ico no existe
+[2022-08-02T14:30:50.030] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T14:37:42.884] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'toLowerCase')
+[2022-08-02T14:39:37.687] [WARN] default - Route GET /favicon.ico no existe
+[2022-08-02T15:31:40.389] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'toLowerCase')
+[2022-08-02T15:32:05.346] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'toLowerCase')
+[2022-08-02T15:34:40.367] [WARN] default - error en SignUpTypeError: Cannot read properties of undefined (reading 'toLowerCase')
+[2022-08-02T15:36:36.696] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-02T15:39:16.687] [WARN] default - error en SignUpError: Error en el usuario
