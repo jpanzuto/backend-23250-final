@@ -13,9 +13,8 @@ const app = express();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.set("views", path.join(__dirname, "../src/public"));
-const directory = path.join(__dirname, "utils/uploads");
-app.use("/uploads", express.static(directory));
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

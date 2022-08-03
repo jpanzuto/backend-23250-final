@@ -5,11 +5,13 @@ import {
 } from "../services/productosService.js";
 
 export async function postProductos(req, res, next) {
+  var imageProduct = "S/D";
+  if (req.file) imageProduct = req.file.filename;
   try {
-    const registrado = await registrarProducto(req.body);
+    const registrado = await registrarProducto(req.body, imageProduct);
     res.status(201).json(registrado);
   } catch (error) {
-    req(error);
+    next(error);
   }
 }
 

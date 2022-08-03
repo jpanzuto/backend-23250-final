@@ -149,3 +149,20 @@
 [2022-08-02T16:54:37.675] [WARN] default - error en SignUpError: Error en el usuario
 [2022-08-02T16:54:45.930] [WARN] default - error en SignUpError: falta el campo imageprofile
 [2022-08-02T16:56:13.325] [WARN] default - error en SignUpError: falta el campo imageprofile
+[2022-08-03T10:20:13.388] [WARN] default - Route GET /favicon.ico no existe
+[2022-08-03T10:20:30.226] [WARN] default - Route GET /estilo.css no existe
+[2022-08-03T10:30:01.860] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:30:19.354] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:30:20.647] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:33:01.054] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:34:34.748] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:40:50.989] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:41:17.708] [WARN] default - Route GET /api/public/estilos.css no existe
+[2022-08-03T10:41:33.252] [WARN] default - Route GET /public/estilos.css no existe
+[2022-08-03T10:41:46.259] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:41:59.355] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:42:00.466] [WARN] default - Route GET /estilos.css no existe
+[2022-08-03T10:42:07.657] [WARN] default - Route GET /public/estilos.css no existe
+[2022-08-03T10:42:19.649] [WARN] default - Route GET /src/public/estilos.css no existe
+[2022-08-03T10:45:01.194] [WARN] default - error en SignUpError: Error en el usuario
+[2022-08-03T10:55:18.146] [WARN] default - error de autenticación en Login

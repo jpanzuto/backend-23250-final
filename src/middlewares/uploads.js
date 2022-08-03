@@ -6,13 +6,13 @@ function uploadFile() {
       res(null, "uploads");
     },
     filename: function (req, file, res) {
-      const imageProfile = Date.now() + "_" + file.originalname;
+      const fileName = Date.now() + "_" + file.originalname;
 
-      res(null, imageProfile);
+      res(null, fileName);
     },
   });
 
-  const upload = multer({ storage: storage }).single("imageProfile");
+  const upload = multer({ storage: storage }).single("fileName");
   return upload;
 }
 export default uploadFile();
