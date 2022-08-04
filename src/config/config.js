@@ -14,4 +14,5 @@ export default {
   MONGO_BASE: process.env.MONGO_BASE,
   NODE_ENV: process.env.NODE_ENV || "development",
   MODO: MODO || process.env.MODO || "CLUSTER",
+  PRIVATE_KEY: process.env.PRIVATE_KEY || "sinvariable",
 };

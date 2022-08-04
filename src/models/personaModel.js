@@ -1,4 +1,5 @@
 import { buscarPersonaPorUsuername } from "../services/personasService.js";
+import uploadFile from "../middlewares/uploads.js";
 
 function crearId() {
   return `${Date.now()}`;
@@ -23,7 +24,7 @@ export async function crearPersona(
   if (!firstname) throw new Error("falta el campo firstname");
   if (!lastname) throw new Error("falta el campo lastname");
   if (!phone) throw new Error("falta el campo phone");
-  if (!imageprofile) throw new Error("falta el campo imageprofile");
+  if (!imageprofile) throw new Error("falta el campo fileName");
 
   return {
     id: crearId(),

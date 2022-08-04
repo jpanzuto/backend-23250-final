@@ -18,13 +18,6 @@ export default class DaoMongoDb extends Dao {
   async personasPorUsername(USERNAME) {
     return this.collection.findOne({ username: USERNAME.toLowerCase() });
   }
-
-  async productosListarTodas() {
-    return this.collection.find().project({ _id: 0 }).toArray();
-  }
-  async productosPorID(ID) {
-    return this.collection.findOne({ id: ID });
-  }
   async autenticarLogueo(username, password) {
     let usuario;
     try {
@@ -38,5 +31,12 @@ export default class DaoMongoDb extends Dao {
       throw new Error("error de autenticacion 2");
     }
     return usuario;
+  }
+
+  async productosListarTodas() {
+    return this.collection.find().project({ _id: 0 }).toArray();
+  }
+  async productosPorID(ID) {
+    return this.collection.findOne({ id: ID });
   }
 }

@@ -166,3 +166,12 @@
 [2022-08-03T10:42:19.649] [WARN] default - Route GET /src/public/estilos.css no existe
 [2022-08-03T10:45:01.194] [WARN] default - error en SignUpError: Error en el usuario
 [2022-08-03T10:55:18.146] [WARN] default - error de autenticación en Login
+[2022-08-04T11:10:17.276] [WARN] default - Route GET /favicon.ico no existe
+[2022-08-04T11:12:24.937] [WARN] default - error en SignUpNo callback function was given.
+[2022-08-04T11:13:31.030] [WARN] default - error en SignUpNo callback function was given.
+[2022-08-04T11:13:59.806] [WARN] default - error en SignUpNo callback function was given.
+[2022-08-04T11:14:15.719] [WARN] default - error en SignUpNo callback function was given.
+[2022-08-04T11:15:02.978] [WARN] default - error de autenticación en Login
+[2022-08-04T11:15:42.066] [WARN] default - error de autenticación en Login
+[2022-08-04T14:19:43.344] [WARN] default - error en SignUpError: falta el campo imageprofile
+[2022-08-04T14:19:54.265] [WARN] default - error en SignUpError: falta el campo imageprofile

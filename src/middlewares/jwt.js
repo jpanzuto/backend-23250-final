@@ -1,9 +1,10 @@
 import jwt from "jsonwebtoken";
-
-const PRIVATE_KEY = "clavedesol";
+import config from "../config/config.js";
 
 export function generateAuthToken(username) {
-  const token = jwt.sign({ username }, PRIVATE_KEY, { expiresIn: "180s" });
+  const token = jwt.sign({ username }, config.PRIVATE_KEY, {
+    expiresIn: "180s",
+  });
   return token;
 }
 
@@ -27,7 +28,7 @@ export function auth(req, res, next) {
   }
 
   try {
-    const objetoOriginal = jwt.verify(token, PRIVATE_KEY);
+    const objetoOriginal = jwt.verify(token, config.PRIVATE_KEY);
     req.user = objetoOriginal;
   } catch (ex) {
     return res.status(403).json({
