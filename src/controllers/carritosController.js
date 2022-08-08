@@ -1,24 +1,17 @@
-import { registrarCarrito } from "../services/carritosService.js";
+import { registrarCarrito, validarStock } from "../services/carritosService.js";
 
 export async function postCarrito(req, res, next) {
-  var userName = "S/D";
-
+  const idUser = new Date();
+  //idUser = idUserPorToken(token)
   try {
-    const registrado = await registrarCarrito(req.body, userName);
+    req.body.amount = await validarStock(req.body.idProduct, req.body.amount);
+    const registrado = await registrarCarrito(req.body, idUser);
     res.status(201).json(registrado);
   } catch (error) {
     next(error);
   }
 }
 /*
-export async function getCarritos(req, res, next) {
-  try {
-    res.status(200).json(await listarCarritos());
-  } catch (error) {
-    next(error);
-  }
-}
-
 export async function getCarritosPorID(req, res, next) {
   try {
     let IdCarritoBuscado = await buscarCarritoPorID(

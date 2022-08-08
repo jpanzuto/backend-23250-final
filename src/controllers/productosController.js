@@ -6,7 +6,7 @@ import {
 
 export async function postProductos(req, res, next) {
   var imageProduct = "S/D";
-  if (req.file) imageProduct = req.file.filename;
+  if (req.file) imageProduct = req.file.path;
   try {
     const registrado = await registrarProducto(req.body, imageProduct);
     res.status(201).json(registrado);

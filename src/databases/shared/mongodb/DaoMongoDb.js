@@ -9,6 +9,7 @@ export default class DaoMongoDb extends Dao {
     await this.collection.insertOne(document);
   }
 
+  // FUNCIONES PARA PERSONAS Y AUTH
   async personasListarTodas() {
     return this.collection.find().project({ _id: 0 }).toArray();
   }
@@ -32,11 +33,25 @@ export default class DaoMongoDb extends Dao {
     }
     return usuario;
   }
-
+  // FUNCIONES PARA PRODUCTOS
   async productosListarTodas() {
     return this.collection.find().project({ _id: 0 }).toArray();
   }
   async productosPorID(ID) {
     return this.collection.findOne({ id: ID });
+  }
+
+  // FUNCIONES PARA CARRITO
+  async cantidadEnStok(idProduct, amount) {
+    let stock;
+    try {
+      stock = await this.collection.findOne({ id: idProduct });
+    } catch (error) {
+      throw new Error("error en stock");
+    }
+    if (stock.stock < amount) {
+      amount = stock.stock;
+    }
+    return amount;
   }
 }

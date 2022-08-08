@@ -1,18 +1,11 @@
-function crearId() {
-  return `${Date.now()}`;
-}
-
-export function crearCarrito(datos, userName) {
-  if (!userName) throw new Error('falta el campo "userName"');
-  if (!datos.idProducto) throw new Error('falta el campo "idProducto"');
-  if (!datos.cantidad) throw new Error('falta el campo "cantidad"');
-  if (!datos.precio) throw new Error('falta el campo "precio"');
+export function crearCarrito(datos, idUser) {
+  if (!idUser) throw new Error('falta el campo "idUser"');
+  if (!datos.idProduct) throw new Error('falta el campo "idProducto"');
+  if (!datos.amount) throw new Error('falta el campo "cantidad"');
 
   return {
-    id: crearId(),
-    userName: userName,
-    idProducto: datos.idProducto,
-    cantidad: datos.precio,
-    precio: datos.precio,
+    id: idUser,
+    idProduct: datos.idProduct,
+    amount: datos.amount,
   };
 }

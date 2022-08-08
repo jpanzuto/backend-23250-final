@@ -1,9 +1,6 @@
 import { buscarPersonaPorUsuername } from "../services/personasService.js";
-import uploadFile from "../middlewares/uploads.js";
+import { v4 as generateId } from "uuid";
 
-function crearId() {
-  return `${Date.now()}`;
-}
 function isValidEmail(username) {
   return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(username);
 }
@@ -11,28 +8,28 @@ function isValidEmail(username) {
 export async function crearPersona(
   username,
   password,
-  firstname,
+  name,
   lastname,
   phone,
-  imageprofile
+  url
 ) {
   if (await buscarPersonaPorUsuername(username.toLowerCase()))
     throw new Error("Error en el usuario");
   if (!username) throw new Error("falta el campo usuario");
   if (!isValidEmail(username)) throw new Error("Error en el Username");
   if (!password) throw new Error("falta el campo contraseña");
-  if (!firstname) throw new Error("falta el campo firstname");
+  if (!name) throw new Error("falta el campo name");
   if (!lastname) throw new Error("falta el campo lastname");
   if (!phone) throw new Error("falta el campo phone");
-  if (!imageprofile) throw new Error("falta el campo fileName");
+  if (!url) throw new Error("falta el campo fileName");
 
   return {
-    id: crearId(),
-    firstname: firstname.toLowerCase(),
+    id: generateId(),
+    name: name.toLowerCase(),
     lastname: lastname.toLowerCase(),
     username: username.toLowerCase(),
     password: password,
     phone: phone,
-    imageprofile: imageprofile,
+    url: url,
   };
 }

@@ -1,19 +1,17 @@
-function crearId() {
-  return `${Date.now()}`;
-}
+import { v4 as generateId } from "uuid";
 
 export function crearProducto(datos, imageProduct) {
-  if (!datos.nombre) throw new Error('falta el campo "nombre"');
-  if (!datos.descripcion) datos.descripcion = "S/D";
-  if (!datos.precio) throw new Error('falta el campo "precio"');
+  if (!datos.name) throw new Error('falta el campo "name"');
+  if (!datos.description) datos.description = "S/D";
+  if (!datos.price) throw new Error('falta el campo "price"');
   if (!datos.stock) throw new Error('falta el campo "stock"');
 
   return {
-    id: crearId(),
-    nombre: datos.nombre,
-    descripcion: datos.descripcion,
-    precio: datos.precio,
-    stock: datos.stock,
+    id: generateId(),
+    name: datos.name,
+    description: datos.description,
+    price: Number(datos.price),
+    stock: Number(datos.stock),
     image: imageProduct,
   };
 }

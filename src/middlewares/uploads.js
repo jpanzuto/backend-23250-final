@@ -6,8 +6,7 @@ function uploadFile() {
       res(null, "uploads");
     },
     filename: function (req, file, res) {
-      const fileName = Date.now() + "_" + file.originalname;
-
+      var fileName = Date.now() + "_" + file.originalname;
       res(null, fileName);
     },
   });

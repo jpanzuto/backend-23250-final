@@ -4,18 +4,18 @@ import daoPersonas from "../databases/personas/daoPersonas.js";
 export async function registrarPersona(
   username,
   password,
-  firstname,
+  name,
   lastname,
   phone,
-  imageprofile
+  url
 ) {
   const persona = await crearPersona(
     username,
     password,
-    firstname,
+    name,
     lastname,
     phone,
-    imageprofile
+    url
   );
   await daoPersonas.guardar(persona);
   return persona;
